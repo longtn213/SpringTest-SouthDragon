@@ -1,4 +1,4 @@
-package com.luv2code.springmvc;
+package com.southdragon.springmvc;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

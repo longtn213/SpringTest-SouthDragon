@@ -1,10 +1,10 @@
-package com.luv2code.springmvc.models;
+package com.southdragon.springmvc.models;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "math_grade")
-public class MathGrade implements Grade {
+@Table(name = "science_grade")
+public class ScienceGrade implements Grade {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
@@ -13,11 +13,11 @@ public class MathGrade implements Grade {
     @Column(name="grade")
     private double grade;
 
-    public MathGrade() {
+    public ScienceGrade() {
 
     }
 
-    public MathGrade(double grade) {
+    public ScienceGrade(double grade) {
         this.grade = grade;
     }
 

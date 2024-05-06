@@ -1,6 +1,6 @@
-package com.luv2code.springmvc;
+package com.southdragon.springmvc;
 
-import com.luv2code.springmvc.models.*;
+import com.southdragon.springmvc.models.*;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,13 +16,13 @@ public class MvcTestingExampleApplication {
 
 	@Bean
 	@Scope(value = "prototype")
-	CollegeStudent getCollegeStudent() {
+    CollegeStudent getCollegeStudent() {
 		return new CollegeStudent();
 	}
 
 	@Bean
 	@Scope(value = "prototype")
-	Grade getMathGrade(double grade) {
+    Grade getMathGrade(double grade) {
 		return new MathGrade(grade);
 	}
 
@@ -36,14 +36,14 @@ public class MvcTestingExampleApplication {
 	@Bean
 	@Scope(value = "prototype")
 	@Qualifier("scienceGrades")
-	ScienceGrade getScienceGrade() {
+    ScienceGrade getScienceGrade() {
 		return new ScienceGrade();
 	}
 
 	@Bean
 	@Scope(value = "prototype")
 	@Qualifier("historyGrades")
-	HistoryGrade getHistoryGrade() {
+    HistoryGrade getHistoryGrade() {
 		return new HistoryGrade();
 	}
 

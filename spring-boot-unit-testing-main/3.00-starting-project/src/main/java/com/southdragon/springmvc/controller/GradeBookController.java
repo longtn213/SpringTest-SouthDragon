@@ -1,16 +1,16 @@
-package com.luv2code.springmvc.controller;
+package com.southdragon.springmvc.controller;
 
-import com.luv2code.springmvc.models.*;
+import com.southdragon.springmvc.models.GradeBook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-public class GradebookController {
+public class GradeBookController {
 
 	@Autowired
-	private Gradebook gradebook;
+	private GradeBook gradebook;
 
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
